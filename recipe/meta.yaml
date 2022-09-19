@@ -21,6 +21,7 @@ requirements:
   run:
     - dask-core >=2022.2.0
     - docstring-inheritance
+    - ndtiff
     - numpy
     - python >=3.6
     - pyzmq
