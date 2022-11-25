@@ -1,5 +1,5 @@
 {% set name = "pycromanager" %}
-{% set version = "0.20.0" %}
+{% set version = "0.22.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycromanager-{{ version }}.tar.gz
-  sha256: 08980db5fa1e9b1c4bbf1c57187916f26cf710c37f4b992f3b8d1b0949bd334a
+  sha256: 5c1c2aaf007f1dc175ce7fca4e0727e123c6703f2199985f3cc9cea4f73b0dfe
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - dask-core >=2022.2.0
     - docstring-inheritance
-    - ndtiff
+    - ndtiff >=1.4.0
     - numpy
     - python >=3.6
     - pyzmq
