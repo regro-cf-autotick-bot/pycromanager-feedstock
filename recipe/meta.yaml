@@ -21,7 +21,7 @@ requirements:
   run:
     - dask-core >=2022.2.0
     - docstring-inheritance
-    - ndtiff
+    - ndtiff >=1.4.0
     - numpy
     - python >=3.6
     - pyzmq
@@ -36,10 +36,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/micro-manager/pycro-manager
+  home: https://pypi.org/project/pycromanager
   summary: Open source microscope control using python
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/micro-manager/pycro-manager
 
 extra:
   recipe-maintainers:
