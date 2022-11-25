@@ -1,5 +1,5 @@
 {% set name = "pycromanager" %}
-{% set version = "0.22.0" %}
+{% set version = "0.22.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycromanager-{{ version }}.tar.gz
-  sha256: 5c1c2aaf007f1dc175ce7fca4e0727e123c6703f2199985f3cc9cea4f73b0dfe
+  sha256: 2ef05515433a0b8efd909012dd01933dcc29dd9fcc0a20d0ec46bcbea961cfb1
 
 build:
   noarch: python
@@ -36,10 +36,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/micro-manager/pycro-manager
+  home: https://pypi.org/project/pycromanager
   summary: Open source microscope control using python
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/micro-manager/pycro-manager
 
 extra:
   recipe-maintainers:
