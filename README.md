@@ -1,13 +1,15 @@
 About pycromanager
 ==================
 
-Home: https://github.com/micro-manager/pycro-manager
+Home: https://pypi.org/project/pycromanager
 
 Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pycromanager-feedstock/blob/main/LICENSE.txt)
 
 Summary: Open source microscope control using python
+
+Development: https://github.com/micro-manager/pycro-manager
 
 Current build status
 ====================
