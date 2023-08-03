@@ -1,0 +1,48 @@
+{% set name = "pycromanager" %}
+{% set version = "0.27.6" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycromanager-{{ version }}.tar.gz
+  sha256: 6b840fcb97826e5acb3d53498d619167c08bd1d31c8731a7b403488f62e77930
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
+
+requirements:
+  host:
+    - pip
+    - python >=3.6
+  run:
+    - dask-core >=2022.2.0
+    - docstring-inheritance
+    - ndtiff >=2.0.0
+    - numpy
+    - python >=3.6
+    - pyzmq
+
+test:
+  imports:
+    - pycromanager
+  commands:
+    - pip list
+    - pip check
+  requires:
+    - pip
+
+about:
+  home: https://pypi.org/project/pycromanager
+  summary: Open source microscope control using python
+  license: BSD-3-Clause
+  license_file: LICENSE
+  dev_url: https://github.com/micro-manager/pycro-manager
+
+extra:
+  recipe-maintainers:
+    - goanpeca
+    - henrypinkard
