@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycromanager-{{ version }}.tar.gz
   sha256: 6b840fcb97826e5acb3d53498d619167c08bd1d31c8731a7b403488f62e77930
+  patches:
+    - setup.patch
 
 build:
   noarch: python
