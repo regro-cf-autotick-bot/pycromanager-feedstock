@@ -28,6 +28,7 @@ requirements:
     - pymmcore
     - python >=3.6
     - pyzmq
+    - sortedcontainers  # Imported but not declared in requirements
 
 test:
   imports:
