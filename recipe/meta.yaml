@@ -25,6 +25,7 @@ requirements:
     - docstring-inheritance
     - ndtiff >=2.2.0
     - numpy
+    - pymmcore
     - python >=3.6
     - pyzmq
 
