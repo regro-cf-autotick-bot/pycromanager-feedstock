@@ -1,5 +1,5 @@
 {% set name = "pycromanager" %}
-{% set version = "0.29.10" %}
+{% set version = "0.30.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pycromanager-{{ version }}.tar.gz
-  sha256: 9dd7a684a129332424481ec6778658c00407ed2df9c2841c88cf11a6b569ff24
+  sha256: 7d8386464a882610be1934381b7b3251962682051c5ebeb16c02f79126f317ca
   patches:
     - setup.patch
 
